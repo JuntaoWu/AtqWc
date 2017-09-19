@@ -13,11 +13,11 @@ app_root = os.path.dirname(__file__)
 templates_root = os.path.join(app_root, 'templates')
 render = web.template.render(templates_root)
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     app.run()
 #本地运行环境
-else:
-    import sae
-    application = sae.create_wsgi_app(app.wsgifunc())
+#else:
+ #   import sae
+  #  application = sae.create_wsgi_app(app.wsgifunc())
 #SAE中Python的应用入口
 #wsgifunc（）是为Web Server Gateway Interface提供的接口
